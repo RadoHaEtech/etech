@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="payment_icon_cc_visacard" model="payment.icon">
+        <field name="name">VISA CARD</field>
+        <field name="image" type="base64" file="payment_cmi/static/src/img/visacard.png"/>
+    </record>
+    <record id="payment_icon_cc_maestrocard" model="payment.icon">
+        <field name="name">MAESTRO CARD</field>
+        <field name="image" type="base64" file="payment_cmi/static/src/img/maestrocard.png"/>
+    </record>
+    <record id="payment_icon_cc_mastercard" model="payment.icon">
+        <field name="name">MASTER CARD</field>
+        <field name="image" type="base64" file="payment_cmi/static/src/img/mastercard.png"/>
+    </record>
+    <record id="payment_icon_cc_cmicard" model="payment.icon">
+        <field name="name">CMI CARD</field>
+        <field name="image" type="base64" file="payment_cmi/static/src/img/cmicard.png"/>
+    </record>
+</odoo>

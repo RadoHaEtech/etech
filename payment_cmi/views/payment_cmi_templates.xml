@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="redirect_form">
+        <form t-att-action="api_url" method="post">
+             <input type="hidden" name="clientid" t-att-value='clientid' />
+            <input type="hidden" name="oid" t-att-value='oid' />
+            <input type="hidden" name="amount" t-att-value='amount' />
+            <input type="hidden" name="currency" t-att-value='currency' />
+            <input type="hidden" name="TranType" t-att-value='TranType' />
+            <input type="hidden" name="storetype" t-att-value='storetype' />
+            <input type="hidden" name="hashAlgorithm" t-att-value='hashAlgorithm' />
+            <input type="hidden" name="rnd" t-att-value='rnd' />
+            <input type="hidden" name="lang" t-att-value='llang' />
+            <input type="hidden" name="refreshtime" t-att-value='refreshtime' />
+            <input type="hidden" name="encoding" t-att-value='encoding' />
+            <input type="hidden" name="BillToName" t-att-value='BillToName' />
+            <input type="hidden" name="email" t-att-value='email' />
+            <input type="hidden" name="tel" t-att-value='tel'/>
+            <input type="hidden" name="BillToStreet1" t-att-value='BillToStreet1' />
+            <input type="hidden" name="BillToCity" t-att-value='BillToCity' />
+            <input type="hidden" name="BillToPostalCode" t-att-value='BillToPostalCode' />
+            <input type="hidden" name="BillToCountry" t-att-value='BillToCountry' />
+            <input type="hidden" name="HASH" t-att-value='hash' />
+            <input type="hidden" name="callbackUrl" t-att-value='callbackUrl' />
+            <input type="hidden" name="failUrl" t-att-value='failUrl' />
+            <input type="hidden" name="okUrl" t-att-value='okUrl' />
+            <input type="hidden" name="shopurl" t-att-value='shopurl'/>
+        </form>
+    </template>
+
+</odoo>

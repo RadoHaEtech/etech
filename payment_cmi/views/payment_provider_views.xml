@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="payment_acquirer_form" model="ir.ui.view">
+        <field name="name">CMI Provider Form</field>
+        <field name="model">payment.provider</field>
+        <field name="inherit_id" ref="payment.payment_provider_form"/>
+		
+		<field name="arch" type="xml">
+            <xpath expr="//div[@id='provider_creation_warning']" position="after">
+            </xpath>
+            <group name="provider_credentials" position="inside">
+                <group attrs="{'invisible': [('code', '!=', 'cmi')]}">
+                    <field name="cmi_merchant_id" attrs="{'required':[ ('code', '=', 'cmi'), ('state', '!=', 'disabled')]}"/>
+                    <field name="cmi_merchant_key" attrs="{'required':[ ('code', '=', 'cmi'), ('state', '!=', 'disabled')]}" password="True"/>
+                    <field name="cmi_url_gateway" attrs="{'required':[ ('code', '=', 'cmi'), ('state', '!=', 'disabled')]}"/>
+                    <field name="cmi_tx_confirmation" attrs="{'required':[ ('code', '=', 'cmi'), ('state', '!=', 'disabled')]}"/>
+                </group>
+            </group>
+        </field>
+    </record>
+
+</odoo>
